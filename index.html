@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ความลับที่อยากให้รู้...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <h1>ลองขูดดูสิ...มีความลับซ่อนอยู่ 🤫</h1>
+    <p class="subtitle">เลือกโหมดที่อยากดูวันนี้เลย</p>
+
+    <div class="mood-selector" id="mood-selector" role="group" aria-label="เลือกโหมด">
+      <button type="button" data-mood="beautiful" aria-pressed="true">ตอนที่น่ารักที่สุด ✨</button>
+      <button type="button" data-mood="crying" aria-pressed="false">ตอนที่งอแง 😢</button>
+      <button type="button" data-mood="cheesy" aria-pressed="false">สิ่งที่เค้าชอบ 💕</button>
+      <button type="button" data-mood="couple" aria-pressed="false">รูปคู่เรา 💑</button>
+    </div>
+
+    <div class="scratch-container" id="scratch-container">
+      <img id="reveal-image" src="" alt="" decoding="async" draggable="false">
+      <div id="reveal-text" class="reveal-text"></div>
+      <canvas id="scratch-canvas" tabindex="0"
+        aria-label="การ์ดขูด ใช้นิ้วหรือเมาส์ขูดเพื่อดูภาพ หรือกด Enter เพื่อเปิดทั้งใบ"></canvas>
+    </div>
+
+    <div class="progress" aria-hidden="true"><div id="progress-bar"></div></div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
